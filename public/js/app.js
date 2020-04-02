@@ -10,7 +10,7 @@ weatherForm.addEventListener('submit',(e)=>{
     messegeTwo.textContent="";
 
     address=searchData.value;
-    url="http://localhost:300/weather?address="+address;
+    url="/weather?address="+address;
     fetch(url).then((response)=>{
             response.json().then((data)=>{
                 if(data.error){
