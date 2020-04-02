@@ -40,7 +40,7 @@ app.get('/weather',(req,res)=>{
     if(!req.query.address)
     {
         return res.send({
-            error:"N address provided"
+            error:"No address provided"
         })
     }
     Geocoding(req.query.address,(error,{latitude,longitude,place}={})=>{
